@@ -108,7 +108,7 @@ Page({
 
   my_orders: function () {
     wx.navigateTo({
-      url: '../myOrders/myOrders',
+      url: '../cusHistory/cusHistory',
       //url: '../facilityInfo/facilityInfo?facilityid=' + res.result,
     })
   }
