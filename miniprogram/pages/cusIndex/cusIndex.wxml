@@ -1,0 +1,99 @@
+<van-notice-bar
+  left-icon="volume-o"
+  text="扫码报修的时候，请查看设备现有的信息是否有误，若有误请手动更新后提交。"
+/>
+<view class="icon1">
+  <van-row gutter="10">
+    <van-col span="6" offset="4">
+      <i class="fa fa-camera fa-2x" style="color:#03A9F4;" bindtap="scan_report"></i>
+    </van-col>
+    <van-col span="6">
+      <i class="fa fa-wrench fa-2x" style="color:#FF9800;" bindtap="new_report_order"></i>
+    </van-col>
+    <van-col span="6">
+      <i class="fa fa-history fa-2x" style="color:#259B24;" bindtap="my_orders"></i>
+    </van-col>
+  </van-row>
+</view>
+
+<view class="text1">
+  <van-row gutter="10">
+    <van-col span="6" offset="4">
+      <text>扫码报修</text>
+    </van-col>
+    <van-col span="6">
+      <text>报修订单</text>
+    </van-col>
+    <van-col span="6">
+      <text>维修历史记录</text>
+    </van-col>
+  </van-row>
+</view>
+
+
+
+<view class="intrduce">
+  <van-row gutter="10">
+    <view class="logo">
+      <van-col span="4" offset="1">
+        <image mode="scaleToFill" src="../../images/1.jpg"></image>
+      </van-col>
+    </view>
+    <view class="comment">
+      <van-col span="21">
+      <view class="title">
+        <text>售后辅助小程序使用须知</text>
+      </view>
+      <view class="content">
+        <text>为了提高客户的满意度以及售后技术人员的服务质量，设计售后服务辅助工具。</text>
+      </view>    
+      </van-col>
+    </view>
+  </van-row>
+  <hr/>
+</view>
+
+
+<view class="intrduce">
+  <van-row gutter="10">
+    <view class="logo">
+      <van-col span="4" offset="1">
+        <image mode="scaleToFill" src="../../images/2.jpg"></image>
+      </van-col>
+    </view>
+    <view class="comment">
+      <van-col span="21">
+      <view class="title">
+        <text>到达客户现场需签到的通知</text>
+      </view>
+      <view class="content">
+        <text>售后技术人员到达现场后，务必先对设备进行扫码签到。</text>
+      </view>    
+      </van-col>
+    </view>
+  </van-row>
+  <hr/>
+</view>
+
+
+<view class="intrduce">
+  <van-row gutter="10">
+    <view class="logo">
+      <van-col span="4" offset="1">
+        <image mode="scaleToFill" src="../../images/3.jpg"></image>
+      </van-col>
+    </view>
+    <view class="comment">
+      <van-col span="21">
+      <view class="title">
+        <text>如何跟进报修订单</text>
+      </view>
+      <view class="content">
+        <text>点击进行中订单，查看当前正在跟进的订单，注意时间限制安全到达客户现场。</text>
+      </view>    
+      </van-col>
+    </view>
+  </van-row>
+  <hr/>
+</view>
+<view class="more"><text>查看更多</text></view>

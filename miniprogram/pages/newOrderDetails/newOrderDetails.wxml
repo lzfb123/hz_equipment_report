@@ -1,0 +1,60 @@
+
+<view class="title">
+<view><text>已申请，等待技术员接受</text></view>
+<view class="title_time"><text>{{ createtime }}</text></view>
+</view>
+<view class="header">
+<view class="header_left">
+<i class="fa fa-clock-o fa-2x" style="color:#03A9F4;"></i><text>{{ facilityOrg }}</text></view>
+<view class="header_right"><text>No.{{report_id}}</text></view>
+</view>
+<view>
+  <van-cell-group>
+    <van-field value="{{ facilityid }}" label="设备id" disabled/>
+    <van-field value="{{ facilityType }}" label="设备类型" disabled/>
+    <van-field value="{{ facilityName }}" label="设备名称" disabled/>
+    <van-field value="{{ brandName }}" label="设备品牌" disabled/>
+    <van-field value="{{ address }}" label="详细地址" disabled/>
+  </van-cell-group>
+</view>
+
+<view wx:if="{{!imagePath==''}}">
+<view class="image">
+<text>上传的图片</text>
+<image bindtap="imgYu" mode="aspectFit" data-src="{{imagePath}}" src="{{imagePath}}"></image>
+</view>
+</view>
+
+<view class="problem"><text>问题描述</text></view>
+<view>
+<van-cell-group>
+  <van-field
+    value="{{ problemDetail }}"
+    type="textarea"
+    autosize="{{autosize}}"
+    border
+    disabled
+    placeholder="未填写设备问题"
+  />
+</van-cell-group>
+</view>
+
+<view class="setTime" bindtap="setTime">
+<van-cell-group>
+  <van-field
+    value="{{ arrival_time }}"
+    required
+    disabled
+    input-align="center"
+    label="到达现场时间"
+    icon="question-o"
+    placeholder="点击选择到达现场的时间(小时)"
+  />
+</van-cell-group>
+</view>
+
+
+<view class="button">
+<van-button size="large" type="info" bind:click="get_order">领取报修申请单</van-button>
+</view>
+

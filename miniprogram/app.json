@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/authorized/authorized",
+    "pages/index/index",
+    "pages/facilityInfo/facilityInfo",
+    "pages/facilityQuery/facilityQuery",
+    "pages/newOrders/newOrders",
+    "pages/newOrderDetails/newOrderDetails",
+    "pages/myOrders/myOrders",
+    "pages/myOrderDetails/myOrderDetails",
+    "pages/repairRecords/repairRecords",
+    "pages/signIn/signIn",
+    "pages/cusIndex/cusIndex",
+    "pages/scanReport/scanReport",
+    "pages/reportOrder/reportOrder",
+    "pages/historyRepairRecords/historyRepairRecords",
+    "pages/historyOrders/historyOrders",
+    "pages/logIn/logIn"
+        
+        
+        
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "售后辅助",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor":"#03A9F4",
+    "color":"#FFFFFF",
+    "selectedColor": "#FFEE93",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "售后端"
+      },
+      {
+        "pagePath": "pages/cusIndex/cusIndex",
+        "text": "客户端"
+      }
+    ]
+  },
+  "cloud": true,
+  "sitemapLocation": "sitemap.json"
+  
+}
